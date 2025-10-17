@@ -1,392 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed_Bahziti</title>
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-brand">Mohammed_Bahziti<span class="brand-dot">.</span></div>
-            <ul class="nav-menu">
-                <!-- English Links -->
-                <li class="lang-en"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="lang-en"><a href="#about" class="nav-link">About</a></li>
-                <li class="lang-en"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="lang-en"><a href="#service" class="nav-link">Services</a></li>
-                <li class="lang-en"><a href="#project" class="nav-link">Projects</a></li>
-                <li class="lang-en"><a href="#contact" class="nav-link">Contact</a></li>
-                <!-- Arabic Links -->
-                <li class="lang-ar" style="display:none;"><a href="#home" class="nav-link active">الرئيسية</a></li>
-                <li class="lang-ar" style="display:none;"><a href="#about" class="nav-link">عني</a></li>
-                <li class="lang-ar" style="display:none;"><a href="#skills" class="nav-link">المهارات</a></li>
-                <li class="lang-ar" style="display:none;"><a href="#service" class="nav-link">الخدمات</a></li>
-                <li class="lang-ar" style="display:none;"><a href="#project" class="nav-link">المشاريع</a></li>
-                <li class="lang-ar" style="display:none;"><a href="#contact" class="nav-link">اتصل بنا</a></li>
-            </ul>
-            <div class="nav-cta">
-                <a href="#contact" class="cta-btn lang-en">Let's Talk</a>
-                <a href="#contact" class="cta-btn lang-ar" style="display:none;">تحدث معي</a>
-                <button id="lang-switcher" class="lang-btn">عربي</button>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="section home">
-            <div class="container">
-                <div class="home-content">
-                    <div class="home-text">
-                        <!-- English Content -->
-                        <div class="lang-en">
-                            <div class="greeting">👋 Hello there!</div>
-                            <h1 class="hero-title">I'm <span class="accent">Mohammed</span></h1>
-                            <h2 class="hero-subtitle" id="rotating-profession-en">Web Developer</h2>
-                            <p class="hero-desc">I'm Mohammed, a passionate Software Developer who enjoys understanding how systems work — from low-level logic circuits to high-level applications. With solid experience in modern web technologies, I aim to create efficient, reliable, and scalable software that combines logic and creativity.</p>
-                        </div>
-                        <!-- Arabic Content -->
-                        <div class="lang-ar" style="display:none;" dir="rtl">
-                            <div class="greeting">👋 أهلاً بك!</div>
-                            <h1 class="hero-title">أنا <span class="accent">محمد</span></h1>
-                            <h2 class="hero-subtitle" id="rotating-profession-ar">مطور ويب</h2>
-                            <p class="hero-desc">أنا محمد، مطور برمجيات شغوف يستمتع بفهم كيفية عمل الأنظمة، من الدوائر المنطقية البسيطة إلى التطبيقات المعقدة. بخبرة قوية في تقنيات الويب الحديثة، أهدف إلى إنشاء برامج فعالة وموثوقة وقابلة للتطوير تجمع بين المنطق والإبداع.</p>
-                        </div>
-                        
-                        <div class="hero-stats">
-                            <div class="stat">
-                                <span class="stat-number">30+</span>
-                                <span class="stat-label lang-en">Projects Completed</span>
-                                <span class="stat-label lang-ar" style="display:none;">مشروع مكتمل</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">2+</span>
-                                <span class="stat-label lang-en">Years Experience</span>
-                                <span class="stat-label lang-ar" style="display:none;">سنوات من الخبرة</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">20+</span>
-                                <span class="stat-label lang-en">Happy Clients</span>
-                                <span class="stat-label lang-ar" style="display:none;">عميل سعيد</span>
-                            </div>
-                        </div>
-
-                        <div class="hero-actions">
-                            <button class="hire-btn primary">
-                                <span class="lang-en">Hire Me</span>
-                                <span class="lang-ar" style="display:none;">وظفني</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                            <button class="hire-btn secondary">
-                                <i class="fas fa-download"></i>
-                                <span class="lang-en">Download CV</span>
-                                <span class="lang-ar" style="display:none;">تحميل السيرة الذاتية</span>
-                            </button>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
-                            <a href="#" aria-label="LinkedIn" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="GitHub" class="social-icon github"><i class="fab fa-github"></i></a>
-                            <a href="#" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="home-image">
-                        <div class="image-container">
-                            <img src="img.jpg" alt="Profile photo of Mohammed" class="profile-image">
-                            <div class="floating-card card-1">
-                                <i class="fas fa-code"></i>
-                                <span class="lang-en">Clean Code</span>
-                                <span class="lang-ar" style="display:none;">كود نظيف</span>
-                            </div>
-                            <div class="floating-card card-2">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span class="lang-en">Responsive</span>
-                                <span class="lang-ar" style="display:none;">متجاوب</span>
-                            </div>
-                            <div class="floating-card card-3">
-                                <i class="fas fa-rocket"></i>
-                                <span class="lang-en">Fast Loading</span>
-                                <span class="lang-ar" style="display:none;">تحميل سريع</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-image">
-                        <div class="image-wrapper">
-                            <img src="img.jpg" alt="About Mohammed" class="about-img">
-                            <div class="experience-badge">
-                                <span class="badge-number">2+</span>
-                                <span class="badge-text lang-en">Years<br>Experience</span>
-                                <span class="badge-text lang-ar" style="display:none;">سنوات<br>خبرة</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-text">
-                        <!-- English Content -->
-                        <div class="lang-en">
-                            <h2 class="section-title">About Me</h2>
-                            <div class="about-description">
-                                <p>I'm a passionate web developer with a strong foundation in both frontend and backend technologies. My journey in web development started 3 years ago, and I've been constantly learning and adapting to new technologies ever since.</p>
-                                <p>I specialize in creating responsive, user-friendly websites and web applications using modern frameworks and libraries. My approach combines technical expertise with creative problem-solving to deliver solutions that not only look great but also perform exceptionally.</p>
-                            </div>
-                        </div>
-                        <!-- Arabic Content -->
-                        <div class="lang-ar" style="display:none;" dir="rtl">
-                            <h2 class="section-title">عني</h2>
-                            <div class="about-description">
-                                <p>أنا مطور ويب شغوف ولدي أساس قوي في تقنيات الواجهة الأمامية والخلفية. بدأت رحلتي في تطوير الويب منذ 3 سنوات، وأنا أتعلم باستمرار وأتكيف مع التقنيات الجديدة منذ ذلك الحين.</p>
-                                <p>أتخصص في إنشاء مواقع وتطبيقات ويب متجاوبة وسهلة الاستخدام باستخدام أحدث الأطر والمكتبات. يجمع منهجي بين الخبرة التقنية وحل المشكلات الإبداعي لتقديم حلول لا تبدو رائعة فحسب، بل تعمل أيضًا بشكل استثنائي.</p>
-                            </div>
-                        </div>
-
-                        <div class="about-highlights">
-                            <div class="highlight">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div class="lang-en">
-                                    <h4>Education</h4>
-                                    <p>Computer Science</p>
-                                </div>
-                                <div class="lang-ar" style="display:none;" dir="rtl">
-                                    <h4>التعليم</h4>
-                                    <p>علوم الحاسوب</p>
-                                </div>
-                            </div>
-                            <div class="highlight">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h4 class="lang-en">Location</h4>
-                                    <h4 class="lang-ar" style="display:none;">الموقع</h4>
-                                    <p>Boudouaou, Boumerdès, Algerie</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-actions">
-                            <button class="about-btn">
-                                <span class="lang-en">Download CV</span>
-                                <span class="lang-ar" style="display:none;">تحميل السيرة الذاتية</span>
-                                <i class="fas fa-download"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section skills">
-            <div class="container">
-                <div class="lang-en">
-                    <h2 class="section-title">Skills & Expertise</h2>
-                </div>
-                <div class="lang-ar" style="display:none;" dir="rtl">
-                    <h2 class="section-title">المهارات والخبرات</h2>
-                </div>
-                <!-- The rest of the skills section content remains the same as it is mostly visual -->
-                 <div class="skills-content">
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Frontend Development</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-js-square"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="skill-category">
-                            <h3>Backend Development</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <i class="fab fa-node-js"></i>
-                                    <span>Node.js</span>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-python"></i>
-                                    <span>Python</span>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-server"></i>
-                                    <span>Express.js</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="service" class="section services">
-            <div class="container">
-                <div class="lang-en">
-                    <h2 class="section-title">What I Do</h2>
-                </div>
-                <div class="lang-ar" style="display:none;" dir="rtl">
-                    <h2 class="section-title">ماذا أقدم</h2>
-                </div>
-                <div class="services-content">
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <div class="service-icon"><i class="fas fa-code"></i></div>
-                            <h3 class="lang-en">Web Development</h3>
-                            <h3 class="lang-ar" style="display:none;">تطوير الويب</h3>
-                            <p class="lang-en">I create responsive, modern websites using the latest technologies and best practices.</p>
-                            <p class="lang-ar" style="display:none;">أقوم بإنشاء مواقع ويب حديثة ومتجاوبة باستخدام أحدث التقنيات وأفضل الممارسات.</p>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                            <h3 class="lang-en">Mobile Development</h3>
-                            <h3 class="lang-ar" style="display:none;">تطوير الموبايل</h3>
-                            <p class="lang-en">Building cross-platform mobile applications that work seamlessly on both iOS and Android.</p>
-                            <p class="lang-ar" style="display:none;">بناء تطبيقات محمولة متعددة المنصات تعمل بسلاسة على كل من iOS و Android.</p>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon"><i class="fas fa-palette"></i></div>
-                            <h3 class="lang-en">UI/UX Design</h3>
-                            <h3 class="lang-ar" style="display:none;">تصميم واجهة وتجربة المستخدم</h3>
-                            <p class="lang-en">Designing intuitive and beautiful user interfaces that provide exceptional user experiences.</p>
-                            <p class="lang-ar" style="display:none;">تصميم واجهات مستخدم بديهية وجميلة توفر تجارب مستخدم استثنائية.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="project" class="section projects">
-            <div class="container">
-                <div class="lang-en">
-                    <h2 class="section-title">Featured Projects</h2>
-                </div>
-                <div class="lang-ar" style="display:none;" dir="rtl">
-                    <h2 class="section-title">مشاريع مميزة</h2>
-                </div>
-                <div class="projects-content">
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image"><img src="Cleveroad.jpg" alt="Project 1"></div>
-                            <div class="project-info">
-                                <h3 class="lang-en">E-commerce Platform</h3>
-                                <h3 class="lang-ar" style="display:none;">منصة تجارة إلكترونية</h3>
-                                <p class="lang-en">A full-stack e-commerce solution with user authentication and payment processing.</p>
-                                <p class="lang-ar" style="display:none;">حل تجارة إلكترونية متكامل مع مصادقة المستخدم ومعالجة الدفع.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image"><img src="Task manager app.jpg" alt="Project 2"></div>
-                            <div class="project-info">
-                                <h3 class="lang-en">Task Management App</h3>
-                                <h3 class="lang-ar" style="display:none;">تطبيق إدارة المهام</h3>
-                                <p class="lang-en">A collaborative task management application with real-time updates.</p>
-                                <p class="lang-ar" style="display:none;">تطبيق تعاوني لإدارة المهام مع تحديثات في الوقت الفعلي.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image"><img src="Weather Forecast Dashboard.jpg" alt="Project 3"></div>
-                            <div class="project-info">
-                                <h3 class="lang-en">Weather Dashboard</h3>
-                                <h3 class="lang-ar" style="display:none;">لوحة تحكم الطقس</h3>
-                                <p class="lang-en">An interactive weather dashboard with location-based forecasts.</p>
-                                <p class="lang-ar" style="display:none;">لوحة تحكم تفاعلية للطقس مع توقعات تستند إلى الموقع.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <div class="lang-en">
-                    <h2 class="section-title">Get In Touch</h2>
-                </div>
-                <div class="lang-ar" style="display:none;" dir="rtl">
-                    <h2 class="section-title">تواصل معي</h2>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="contact-details">
-                                <h3 class="lang-en">Email</h3>
-                                <h3 class="lang-ar" style="display:none;">البريد الإلكتروني</h3>
-                                <p>mohammed@example.com</p>
-                            </div>
-                        </div>
-                         <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div class="contact-details">
-                                <h3 class="lang-en">Phone</h3>
-                                <h3 class="lang-ar" style="display:none;">الهاتف</h3>
-                                <p>+221 00 11 22 33 44</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group lang-en">
-                                <input type="text" id="name-en" name="name" required><label for="name-en">Your Name</label>
-                            </div>
-                            <div class="form-group lang-ar" style="display:none;" dir="rtl">
-                                <input type="text" id="name-ar" name="name" required><label for="name-ar">اسمك</label>
-                            </div>
-                             <div class="form-group lang-en">
-                                <input type="email" id="email-en" name="email" required><label for="email-en">Your Email</label>
-                            </div>
-                            <div class="form-group lang-ar" style="display:none;" dir="rtl">
-                                <input type="email" id="email-ar" name="email" required><label for="email-ar">بريدك الإلكتروني</label>
-                            </div>
-                            <div class="form-group lang-en">
-                                <textarea id="message-en" name="message" rows="5" required></textarea><label for="message-en">Your Message</label>
-                            </div>
-                            <div class="form-group lang-ar" style="display:none;" dir="rtl">
-                                <textarea id="message-ar" name="message" rows="5" required></textarea><label for="message-ar">رسالتك</label>
-                            </div>
-                            <button type="submit" class="submit-btn">
-                                <span class="lang-en">Send Message</span>
-                                <span class="lang-ar" style="display:none;">أرسل الرسالة</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
-</body>
-</html>
